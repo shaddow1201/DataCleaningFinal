@@ -13,15 +13,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Data Flow
 ###0. About the Data
-
-
-
-###1. Data Acquisition - Acquire data and place it in local working directory
-+ The first step is to acquire the data, and data detail from the following locations:
-Base Datail: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"  
 Data Detail: "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"
 
-+ The base data is assumed to be unzipped and in the current working directory, with the original directory structure included.
++ this provides the details about the data being processed.
+
+###1. Data Acquisition - Acquire data and place it in local working directory
+Base Data: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"  
+
++ The first step is to acquire the data, and data detail from the following above location
+
++ For processing, the base data is assumed to be unzipped and in the current working directory, with the original directory structure and files.
 
 ###2. Dependencies
 + this script uses the dplyr library
