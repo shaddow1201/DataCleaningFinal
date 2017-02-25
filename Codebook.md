@@ -62,3 +62,34 @@ Base Data: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 
 ###11. Write out output
 + write tidyData.txt file with mean data.
+
+## output variables
+Variable list from the final clean data set cleandata.txt:
+names(meanData)
+ [1] "activity"                     "subject"                      "tbodyaccmeanx"               
+ [4] "tbodyaccmeany"                "tbodyaccmeanz"                "tbodyaccstdx"                
+ [7] "tbodyaccstdy"                 "tbodyaccstdz"                 "tgravityaccmeanx"            
+[10] "tgravityaccmeany"             "tgravityaccmeanz"             "tgravityaccstdx"             
+[13] "tgravityaccstdy"              "tgravityaccstdz"              "tbodyaccjerkmeanx"           
+[16] "tbodyaccjerkmeany"            "tbodyaccjerkmeanz"            "tbodyaccjerkstdx"            
+[19] "tbodyaccjerkstdy"             "tbodyaccjerkstdz"             "tbodygyromeanx"              
+[22] "tbodygyromeany"               "tbodygyromeanz"               "tbodygyrostdx"               
+[25] "tbodygyrostdy"                "tbodygyrostdz"                "tbodygyrojerkmeanx"          
+[28] "tbodygyrojerkmeany"           "tbodygyrojerkmeanz"           "tbodygyrojerkstdx"           
+[31] "tbodygyrojerkstdy"            "tbodygyrojerkstdz"            "tbodyaccmagmean"             
+[34] "tbodyaccmagstd"               "tgravityaccmagmean"           "tgravityaccmagstd"           
+[37] "tbodyaccjerkmagmean"          "tbodyaccjerkmagstd"           "tbodygyromagmean"            
+[40] "tbodygyromagstd"              "tbodygyrojerkmagmean"         "tbodygyrojerkmagstd"         
+[43] "fbodyaccmeanx"                "fbodyaccmeany"                "fbodyaccmeanz"               
+[46] "fbodyaccstdx"                 "fbodyaccstdy"                 "fbodyaccstdz"                
+[49] "fbodyaccmeanfreqx"            "fbodyaccmeanfreqy"            "fbodyaccmeanfreqz"           
+[52] "fbodyaccjerkmeanx"            "fbodyaccjerkmeany"            "fbodyaccjerkmeanz"           
+[55] "fbodyaccjerkstdx"             "fbodyaccjerkstdy"             "fbodyaccjerkstdz"            
+[58] "fbodyaccjerkmeanfreqx"        "fbodyaccjerkmeanfreqy"        "fbodyaccjerkmeanfreqz"       
+[61] "fbodygyromeanx"               "fbodygyromeany"               "fbodygyromeanz"              
+[64] "fbodygyrostdx"                "fbodygyrostdy"                "fbodygyrostdz"               
+[67] "fbodygyromeanfreqx"           "fbodygyromeanfreqy"           "fbodygyromeanfreqz"          
+[70] "fbodyaccmagmean"              "fbodyaccmagstd"               "fbodyaccmagmeanfreq"         
+[73] "fbodybodyaccjerkmagmean"      "fbodybodyaccjerkmagstd"       "fbodybodyaccjerkmagmeanfreq" 
+[76] "fbodybodygyromagmean"         "fbodybodygyromagstd"          "fbodybodygyromagmeanfreq"    
+[79] "fbodybodygyrojerkmagmean"     "fbodybodygyrojerkmagstd"      "fbodybodygyrojerkmagmeanfreq"
