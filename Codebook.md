@@ -64,7 +64,7 @@ Base Data: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 + write tidyData.txt file with mean data.
 
 ## output variables
-Variable list from the final clean data set cleandata.txt:
+Variable list from the final clean data set
 names(meanData)
  [1] "activity"                     "subject"                      "tbodyaccmeanx"               
  [4] "tbodyaccmeany"                "tbodyaccmeanz"                "tbodyaccstdx"                
