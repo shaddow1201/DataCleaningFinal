@@ -18,27 +18,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ###1. Data Acquisition - Acquire data and place it in local working directory
 + The first step is to acquire the data, and data detail from the following locations:
-Base Datail: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+Base Datail: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"  
 Data Detail: "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"
 
 + The base data is assumed to be unzipped and in the current working directory, with the original directory structure included.
 
 ###2. Dependencies
-+ this script uses the plyr library
++ this script uses the dplyr library
 
 ###3. Data Load - load all data into data a frame.
-+ Load Activity and Feature Names - variables: activityNames, featureNames
-+ Load Training Data into dataframes - 
++ Load Activity and Feature Names 
++ Load Training Data into dataframes 
 + Load Testing Data into dataframes
-+ Load data into full joined set - variable: FullSet
++ Load data into full joined set 
 
 ###4. Bind loaded data together.
 + Bind Training Data together, with Subject at end.
 + Bind Testing Data together, with Subject at end. 
-++ This allows easy binding of testing and training by Subject.
++ Binding subject to the end allows easy connection of the feature names, keeping them in sequence.
 
 ###5. feature names housecleaning.
-+ using of gsub to rename -std -> Std, -mean -> Mean and getting rid of -(), making these names clear and simple to search on.
++ using of gsub to rename -std -> STD, -mean -> MEAN and getting rid of -(), making these names clear and simple to search on. (more tidy data work)
 
 ###6. subset features
 + get the columns that have MEAN or STD in them.
@@ -53,16 +53,11 @@ Data Detail: "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+
 ###8. Loop through Activities
 + and replace numeric representation of activity with activity name
 
-###9. change the added columns to factors (tidy data preferred)
+###9. change the Activity and Subject columns to factors
++ this allows the means table to be based on these fields
 
-###10. Create means table broken by activity, and subject
+###10. Create means table
++ create table, broken by activity, and subject, with removed activity and subject means (not needed or useful)
 
-###11. Write out output tidyData.txt file with mean data in it.
-
-
-
-
-
-
-
-
+###11. Write out output
++ write tidyData.txt file with mean data.

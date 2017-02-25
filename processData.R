@@ -57,7 +57,7 @@ library(dplyr)
     currentActivity <- currentActivity + 1
   }
 
-# 9. change subject and activity to factor variables (tidy data)
+# 9. change subject and activity to factor variables 
   finalData$subject <- as.factor(finalData$subject)
   finalData$activity <- as.factor(finalData$activity)
   
